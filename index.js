@@ -4,7 +4,6 @@ const multer = require('multer');
 const bodyParser = require('body-parser');
 const GridFsStorage = require('multer-gridfs-storage');
 const Grid = require('gridfs-stream');
-const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
