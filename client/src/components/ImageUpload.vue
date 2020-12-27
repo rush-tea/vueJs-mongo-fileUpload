@@ -101,9 +101,6 @@ export default {
     background: #f3f3f3;
     border: 1px solid #d8d8d8;
   }
-  .btn-secondary{
-    width: 100%;
-  }
   .imageContainer{
     width: 70%;
   }

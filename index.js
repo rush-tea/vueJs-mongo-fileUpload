@@ -15,7 +15,6 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(methodOverride('_method'));
 
 
 /*---------------------*/
@@ -79,14 +78,6 @@ app.get('/', (req, res) => {
             });
         }
         else {
-            files.map((file) => {
-                if (file.contentType === 'image/jpeg' || file.contentType === 'image/png') {
-                    file.isImage = true;
-                }
-                else {
-                    file.isImage = false;
-                }
-            });
             res.send({
                 files: files
             });
